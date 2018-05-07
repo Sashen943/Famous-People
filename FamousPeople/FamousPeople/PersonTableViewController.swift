@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import os.log
+
 
 class PersonTableViewController: UITableViewController {
 
@@ -82,6 +84,25 @@ class PersonTableViewController: UITableViewController {
         cell.occupation.text = person.occupation
         cell.photoImageView.image = person.image
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          super.prepare(for: segue, sender: sender)
+        guard let personDetailsViewController = segue.destination as? PersonDetailsViewController else {
+            fatalError("Unexpected destination: \(segue.destination)")
+        }
+        
+        guard let selectedPersonCell = sender as? PersonTableViewCell else {
+            fatalError("Unexpected sender: \(String(describing: sender))")
+            
+        }
+        
+        guard let indexPath = tableView.indexPath(for: selectedPersonCell) else {
+            fatalError("The selected cell is not being displayed by the table")
+        }
+        
+        let selectedPerson = people[indexPath.row]
+       personDetailsViewController.person = selectedPerson
     }
 
     /*
