@@ -1,24 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKC-E3-ke7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Famous People List-->
+        <scene sceneID="wWe-bG-1uT">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="Famous People List" id="cbn-WA-Dm4" customClass="PersonTableViewController" customModule="FamousPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jfb-IF-xFg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ddp-J1-HaP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonTableViewCell" rowHeight="90" id="fSs-ll-gqz" customClass="PersonTableViewCell" customModule="FamousPeople" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fSs-ll-gqz" id="22E-GV-GNK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mandela" translatesAutoresizingMaskIntoConstraints="NO" id="aTd-cd-NUr">
+                                            <rect key="frame" x="0.0" y="0.0" width="90.5" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="aTd-cd-NUr" secondAttribute="height" multiplier="1:1" id="JFR-Bd-GId"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Former President of South Africa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6R-CD-7o0">
+                                            <rect key="frame" x="106" y="49" width="253" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelson Rolihlahla Mandela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADk-rT-VYo">
+                                            <rect key="frame" x="106" y="27" width="253" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="f6R-CD-7o0" firstAttribute="leading" secondItem="ADk-rT-VYo" secondAttribute="leading" id="1xZ-PA-lzJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="aTd-cd-NUr" secondAttribute="bottom" id="4wh-ei-PiQ"/>
+                                        <constraint firstItem="f6R-CD-7o0" firstAttribute="trailing" secondItem="22E-GV-GNK" secondAttribute="trailingMargin" id="96E-Yg-e9h"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ADk-rT-VYo" secondAttribute="bottom" constant="47" id="Ccf-ot-TA2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="f6R-CD-7o0" secondAttribute="bottom" constant="29" id="Wds-1k-0id"/>
+                                        <constraint firstItem="aTd-cd-NUr" firstAttribute="leading" secondItem="22E-GV-GNK" secondAttribute="leading" id="YtP-3s-buo"/>
+                                        <constraint firstItem="ADk-rT-VYo" firstAttribute="centerX" secondItem="22E-GV-GNK" secondAttribute="centerX" id="dg5-Ig-dT3"/>
+                                        <constraint firstItem="f6R-CD-7o0" firstAttribute="leading" secondItem="aTd-cd-NUr" secondAttribute="trailing" constant="14" id="gDa-vs-DtJ"/>
+                                        <constraint firstItem="aTd-cd-NUr" firstAttribute="top" secondItem="22E-GV-GNK" secondAttribute="top" id="hVu-ia-alJ"/>
+                                        <constraint firstItem="ADk-rT-VYo" firstAttribute="top" secondItem="22E-GV-GNK" secondAttribute="topMargin" id="lY3-W1-ZzU"/>
+                                        <constraint firstItem="f6R-CD-7o0" firstAttribute="top" secondItem="22E-GV-GNK" secondAttribute="topMargin" constant="18" id="woe-kd-eoj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="ADk-rT-VYo" id="5B5-U1-oOi"/>
+                                    <outlet property="occupation" destination="f6R-CD-7o0" id="xrW-l2-Oef"/>
+                                    <outlet property="photoImageView" destination="aTd-cd-NUr" id="Y9j-sM-sdH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cbn-WA-Dm4" id="YuC-wq-eHQ"/>
+                            <outlet property="delegate" destination="cbn-WA-Dm4" id="ta0-ZO-R2o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Famous People" id="lYA-by-avn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QR1-eS-6wD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="115.59220389805098"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RCi-94-H9O">
+            <objects>
+                <viewController id="Gha-zM-7EF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6K-ar-dwL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mozart" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-so-Qit">
+                                <rect key="frame" x="16" y="91" width="343" height="186"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelson Mandela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-et-M1g">
+                                <rect key="frame" x="16" y="58" width="343" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Former president of South Africa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-FE-zG5">
+                                <rect key="frame" x="16" y="293" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKc-59-RFr">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhw-MC-sdv">
+                                <rect key="frame" x="16" y="321" width="343" height="81.5"/>
+                                <string key="text">Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dug-FE-zG5" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="2JU-Pp-8X8"/>
+                            <constraint firstItem="Rhw-MC-sdv" firstAttribute="top" secondItem="Dug-FE-zG5" secondAttribute="bottom" constant="16" id="2fJ-lD-z7V"/>
+                            <constraint firstItem="5xa-so-Qit" firstAttribute="top" secondItem="Wbd-tr-sB1" secondAttribute="top" id="88r-AO-wBW"/>
+                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="IBL-et-M1g" secondAttribute="trailing" constant="16" id="BhW-0I-vpj"/>
+                            <constraint firstItem="Rhw-MC-sdv" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="Gr3-Sl-M8M"/>
+                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="Dug-FE-zG5" secondAttribute="trailing" constant="16" id="PFZ-FR-Gbg"/>
+                            <constraint firstItem="Dug-FE-zG5" firstAttribute="top" secondItem="IBL-et-M1g" secondAttribute="bottom" constant="16" id="Sc4-JB-09T"/>
+                            <constraint firstItem="lKc-59-RFr" firstAttribute="top" secondItem="Wbd-tr-sB1" secondAttribute="top" id="SeD-vn-DsP"/>
+                            <constraint firstItem="lKc-59-RFr" firstAttribute="leading" secondItem="i6K-ar-dwL" secondAttribute="leadingMargin" id="Sy0-zx-doQ"/>
+                            <constraint firstItem="IBL-et-M1g" firstAttribute="top" secondItem="5xa-so-Qit" secondAttribute="bottom" constant="16" id="TIZ-7F-66r"/>
+                            <constraint firstItem="5xa-so-Qit" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="WHw-Hl-4Xi"/>
+                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="Rhw-MC-sdv" secondAttribute="trailing" constant="16" id="f2q-T0-655"/>
+                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="5xa-so-Qit" secondAttribute="trailing" constant="16" id="gCN-Uf-5B0"/>
+                            <constraint firstItem="IBL-et-M1g" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="tqp-7t-z5c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wbd-tr-sB1"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4Q-wY-ypV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1044" y="116.49175412293854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fq3-NK-Wih">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OKC-E3-ke7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5V-eE-LGW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cbn-WA-Dm4" kind="relationship" relationship="rootViewController" id="fGt-NR-hPt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xsa-ZY-nWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mandela" width="531" height="399"/>
+        <image name="mozart" width="126" height="186"/>
+    </resources>
 </document>
