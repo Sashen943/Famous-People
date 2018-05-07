@@ -16,22 +16,16 @@ class PersonDetailsViewController: UIViewController {
     @IBOutlet weak var des: UILabel!
     var person : Person?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         populateUI()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func populateUI(){
-
         name.text = person?.name
         image.image = person?.image
         occupation.text = person?.occupation

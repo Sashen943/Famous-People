@@ -64,6 +64,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662F528B20A0E9E1001A0A98 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */,
+				66EAA771209C371300A64E0F /* PersonTableViewCell.swift */,
+				66EAA773209C46F900A64E0F /* PersonTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		662F528C20A0EA0E001A0A98 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				662F528920A0320C001A0A98 /* PersonDetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		662F528D20A0EA25001A0A98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66EAA775209C477400A64E0F /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		662F528E20A0EA35001A0A98 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66F2EBDF2099DAFB0014A8DD /* Main.storyboard */,
+				66F2EBE42099DAFB0014A8DD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		66F2EBCF2099DAFB0014A8DD = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +120,12 @@
 		66F2EBDA2099DAFB0014A8DD /* FamousPeople */ = {
 			isa = PBXGroup;
 			children = (
+				662F528E20A0EA35001A0A98 /* Storyboards */,
+				662F528D20A0EA25001A0A98 /* Model */,
+				662F528C20A0EA0E001A0A98 /* Details */,
+				662F528B20A0E9E1001A0A98 /* List */,
 				66F2EBDB2099DAFB0014A8DD /* AppDelegate.swift */,
-				662F528920A0320C001A0A98 /* PersonDetailsViewController.swift */,
-				66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */,
-				66F2EBDF2099DAFB0014A8DD /* Main.storyboard */,
-				66EAA771209C371300A64E0F /* PersonTableViewCell.swift */,
 				66F2EBE22099DAFB0014A8DD /* Assets.xcassets */,
-				66EAA773209C46F900A64E0F /* PersonTableViewController.swift */,
-				66EAA775209C477400A64E0F /* Person.swift */,
-				66F2EBE42099DAFB0014A8DD /* LaunchScreen.storyboard */,
 				66F2EBE72099DAFB0014A8DD /* Info.plist */,
 			);
 			path = FamousPeople;
