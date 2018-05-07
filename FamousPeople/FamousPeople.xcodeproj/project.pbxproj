@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66EAA772209C371300A64E0F /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA771209C371300A64E0F /* PersonTableViewCell.swift */; };
+		66EAA774209C46F900A64E0F /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA773209C46F900A64E0F /* PersonTableViewController.swift */; };
+		66EAA776209C477400A64E0F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA775209C477400A64E0F /* Person.swift */; };
 		66F2EBDC2099DAFB0014A8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2EBDB2099DAFB0014A8DD /* AppDelegate.swift */; };
-		66F2EBDE2099DAFB0014A8DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2EBDD2099DAFB0014A8DD /* ViewController.swift */; };
+		66F2EBDE2099DAFB0014A8DD /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */; };
 		66F2EBE12099DAFB0014A8DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F2EBDF2099DAFB0014A8DD /* Main.storyboard */; };
 		66F2EBE32099DAFB0014A8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F2EBE22099DAFB0014A8DD /* Assets.xcassets */; };
 		66F2EBE62099DAFB0014A8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F2EBE42099DAFB0014A8DD /* LaunchScreen.storyboard */; };
@@ -26,9 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66EAA771209C371300A64E0F /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		66EAA773209C46F900A64E0F /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		66EAA775209C477400A64E0F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		66F2EBD82099DAFB0014A8DD /* FamousPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F2EBDB2099DAFB0014A8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66F2EBDD2099DAFB0014A8DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		66F2EBE02099DAFB0014A8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66F2EBE22099DAFB0014A8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66F2EBE52099DAFB0014A8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,9 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				66F2EBDB2099DAFB0014A8DD /* AppDelegate.swift */,
-				66F2EBDD2099DAFB0014A8DD /* ViewController.swift */,
+				66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */,
 				66F2EBDF2099DAFB0014A8DD /* Main.storyboard */,
+				66EAA771209C371300A64E0F /* PersonTableViewCell.swift */,
 				66F2EBE22099DAFB0014A8DD /* Assets.xcassets */,
+				66EAA773209C46F900A64E0F /* PersonTableViewController.swift */,
+				66EAA775209C477400A64E0F /* Person.swift */,
 				66F2EBE42099DAFB0014A8DD /* LaunchScreen.storyboard */,
 				66F2EBE72099DAFB0014A8DD /* Info.plist */,
 			);
@@ -146,7 +155,7 @@
 				TargetAttributes = {
 					66F2EBD72099DAFB0014A8DD = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					66F2EBEB2099DAFB0014A8DD = {
 						CreatedOnToolsVersion = 9.2;
@@ -199,7 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66F2EBDE2099DAFB0014A8DD /* ViewController.swift in Sources */,
+				66EAA776209C477400A64E0F /* Person.swift in Sources */,
+				66EAA774209C46F900A64E0F /* PersonTableViewController.swift in Sources */,
+				66EAA772209C371300A64E0F /* PersonTableViewCell.swift in Sources */,
+				66F2EBDE2099DAFB0014A8DD /* PeopleListViewController.swift in Sources */,
 				66F2EBDC2099DAFB0014A8DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,8 +366,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = FamousPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.jhb.FamousPeople;
@@ -371,8 +383,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLK7J5PP82;
 				INFOPLIST_FILE = FamousPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.jhb.FamousPeople;
