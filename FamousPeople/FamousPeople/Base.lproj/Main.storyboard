@@ -70,6 +70,7 @@
                                     <outlet property="name" destination="ADk-rT-VYo" id="5B5-U1-oOi"/>
                                     <outlet property="occupation" destination="f6R-CD-7o0" id="xrW-l2-Oef"/>
                                     <outlet property="photoImageView" destination="aTd-cd-NUr" id="Y9j-sM-sdH"/>
+                                    <segue destination="HcL-i1-8Ym" kind="show" id="tdG-uO-bpl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -84,64 +85,70 @@
             </objects>
             <point key="canvasLocation" x="244" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="RCi-94-H9O">
+        <!--Person Details View Controller-->
+        <scene sceneID="Ave-uP-5v8">
             <objects>
-                <viewController id="Gha-zM-7EF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i6K-ar-dwL">
+                <viewController id="HcL-i1-8Ym" customClass="PersonDetailsViewController" customModule="FamousPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w26-cC-TcL" customClass="PersonTableViewCell" customModule="FamousPeople" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mozart" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-so-Qit">
-                                <rect key="frame" x="16" y="91" width="343" height="186"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nelson Mandela" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-et-M1g">
-                                <rect key="frame" x="16" y="58" width="343" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nelson Mandela" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeY-De-pMC">
+                                <rect key="frame" x="8" y="343" width="359" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Former president of South Africa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-FE-zG5">
-                                <rect key="frame" x="16" y="293" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-Hh-dBO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="239"/>
+                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1h-WX-HKv">
+                                <rect key="frame" x="8" y="383" width="359" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Former president of South Africa">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKc-59-RFr">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhw-MC-sdv">
-                                <rect key="frame" x="16" y="321" width="343" height="81.5"/>
-                                <string key="text">Nelson Rolihlahla Mandela was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-1o-yae">
+                                <rect key="frame" x="8" y="413" width="359" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Dug-FE-zG5" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="2JU-Pp-8X8"/>
-                            <constraint firstItem="Rhw-MC-sdv" firstAttribute="top" secondItem="Dug-FE-zG5" secondAttribute="bottom" constant="16" id="2fJ-lD-z7V"/>
-                            <constraint firstItem="5xa-so-Qit" firstAttribute="top" secondItem="Wbd-tr-sB1" secondAttribute="top" id="88r-AO-wBW"/>
-                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="IBL-et-M1g" secondAttribute="trailing" constant="16" id="BhW-0I-vpj"/>
-                            <constraint firstItem="Rhw-MC-sdv" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="Gr3-Sl-M8M"/>
-                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="Dug-FE-zG5" secondAttribute="trailing" constant="16" id="PFZ-FR-Gbg"/>
-                            <constraint firstItem="Dug-FE-zG5" firstAttribute="top" secondItem="IBL-et-M1g" secondAttribute="bottom" constant="16" id="Sc4-JB-09T"/>
-                            <constraint firstItem="lKc-59-RFr" firstAttribute="top" secondItem="Wbd-tr-sB1" secondAttribute="top" id="SeD-vn-DsP"/>
-                            <constraint firstItem="lKc-59-RFr" firstAttribute="leading" secondItem="i6K-ar-dwL" secondAttribute="leadingMargin" id="Sy0-zx-doQ"/>
-                            <constraint firstItem="IBL-et-M1g" firstAttribute="top" secondItem="5xa-so-Qit" secondAttribute="bottom" constant="16" id="TIZ-7F-66r"/>
-                            <constraint firstItem="5xa-so-Qit" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="WHw-Hl-4Xi"/>
-                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="Rhw-MC-sdv" secondAttribute="trailing" constant="16" id="f2q-T0-655"/>
-                            <constraint firstItem="Wbd-tr-sB1" firstAttribute="trailing" secondItem="5xa-so-Qit" secondAttribute="trailing" constant="16" id="gCN-Uf-5B0"/>
-                            <constraint firstItem="IBL-et-M1g" firstAttribute="leading" secondItem="Wbd-tr-sB1" secondAttribute="leading" constant="16" id="tqp-7t-z5c"/>
+                            <constraint firstItem="OeY-De-pMC" firstAttribute="leading" secondItem="Fk6-Vw-O4M" secondAttribute="leading" constant="8" id="4sL-Ib-X2B"/>
+                            <constraint firstItem="Fk6-Vw-O4M" firstAttribute="trailing" secondItem="cKw-1o-yae" secondAttribute="trailing" constant="8" id="ChW-4K-ORH"/>
+                            <constraint firstItem="eIj-Hh-dBO" firstAttribute="leading" secondItem="Fk6-Vw-O4M" secondAttribute="leading" id="IPz-WZ-Zsv"/>
+                            <constraint firstItem="cKw-1o-yae" firstAttribute="leading" secondItem="Fk6-Vw-O4M" secondAttribute="leading" constant="8" id="L5u-Rf-Xhh"/>
+                            <constraint firstItem="eIj-Hh-dBO" firstAttribute="top" secondItem="Fk6-Vw-O4M" secondAttribute="top" constant="8" id="S6G-cK-N1r"/>
+                            <constraint firstItem="J1h-WX-HKv" firstAttribute="leading" secondItem="Fk6-Vw-O4M" secondAttribute="leading" constant="8" id="Vqk-iB-JhV"/>
+                            <constraint firstItem="J1h-WX-HKv" firstAttribute="top" secondItem="OeY-De-pMC" secondAttribute="bottom" constant="8" id="WPd-lf-Ir3"/>
+                            <constraint firstItem="cKw-1o-yae" firstAttribute="top" secondItem="J1h-WX-HKv" secondAttribute="bottom" constant="8" id="ZnV-in-8HH"/>
+                            <constraint firstItem="Fk6-Vw-O4M" firstAttribute="trailing" secondItem="OeY-De-pMC" secondAttribute="trailing" constant="8" id="cxb-ss-XCe"/>
+                            <constraint firstItem="OeY-De-pMC" firstAttribute="top" secondItem="eIj-Hh-dBO" secondAttribute="bottom" constant="8" id="fnw-nQ-2st"/>
+                            <constraint firstItem="Fk6-Vw-O4M" firstAttribute="trailing" secondItem="eIj-Hh-dBO" secondAttribute="trailing" id="kCe-U3-od8"/>
+                            <constraint firstItem="Fk6-Vw-O4M" firstAttribute="trailing" secondItem="J1h-WX-HKv" secondAttribute="trailing" constant="8" id="v7E-Px-3HN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wbd-tr-sB1"/>
+                        <viewLayoutGuide key="safeArea" id="Fk6-Vw-O4M"/>
                     </view>
+                    <connections>
+                        <outlet property="des" destination="cKw-1o-yae" id="FlJ-RE-Kaj"/>
+                        <outlet property="image" destination="eIj-Hh-dBO" id="LvP-ID-3mm"/>
+                        <outlet property="name" destination="OeY-De-pMC" id="Yox-wi-A6l"/>
+                        <outlet property="occupation" destination="J1h-WX-HKv" id="Qrk-JI-lq9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4Q-wY-ypV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yem-3A-2gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="116.49175412293854"/>
+            <point key="canvasLocation" x="994.39999999999998" y="118.29085457271366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fq3-NK-Wih">
@@ -164,6 +171,5 @@
     </scenes>
     <resources>
         <image name="mandela" width="531" height="399"/>
-        <image name="mozart" width="126" height="186"/>
     </resources>
 </document>

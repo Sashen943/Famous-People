@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662F528A20A0320C001A0A98 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662F528920A0320C001A0A98 /* PersonDetailsViewController.swift */; };
 		66EAA772209C371300A64E0F /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA771209C371300A64E0F /* PersonTableViewCell.swift */; };
 		66EAA774209C46F900A64E0F /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA773209C46F900A64E0F /* PersonTableViewController.swift */; };
 		66EAA776209C477400A64E0F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EAA775209C477400A64E0F /* Person.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		662F528920A0320C001A0A98 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		66EAA771209C371300A64E0F /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		66EAA773209C46F900A64E0F /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
 		66EAA775209C477400A64E0F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				66F2EBDB2099DAFB0014A8DD /* AppDelegate.swift */,
+				662F528920A0320C001A0A98 /* PersonDetailsViewController.swift */,
 				66F2EBDD2099DAFB0014A8DD /* PeopleListViewController.swift */,
 				66F2EBDF2099DAFB0014A8DD /* Main.storyboard */,
 				66EAA771209C371300A64E0F /* PersonTableViewCell.swift */,
@@ -210,6 +213,7 @@
 			files = (
 				66EAA776209C477400A64E0F /* Person.swift in Sources */,
 				66EAA774209C46F900A64E0F /* PersonTableViewController.swift in Sources */,
+				662F528A20A0320C001A0A98 /* PersonDetailsViewController.swift in Sources */,
 				66EAA772209C371300A64E0F /* PersonTableViewCell.swift in Sources */,
 				66F2EBDE2099DAFB0014A8DD /* PeopleListViewController.swift in Sources */,
 				66F2EBDC2099DAFB0014A8DD /* AppDelegate.swift in Sources */,
