@@ -31,6 +31,7 @@ class PersonTableViewController: UITableViewController {
     }
     
     private func loadPeople(){
+        
         let imageNelsonMandela = UIImage(named: "nelsonmadela")
         let imageAlanTuring = UIImage(named: "alanturing")
         let imageGhandi = UIImage(named: "ghandi")
