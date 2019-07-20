@@ -1,9 +1,5 @@
 # Famous People
-An iOS application created in swift that has information about different famous people
-
-# Build Status
-
-[![Build Status](https://www.bitrise.io/app/b7fe39d7c99ed4d4/status.svg?token=NWmkXTskNAT8jxVdsfTAPw&branch=master)](https://www.bitrise.io/app/b7fe39d7c99ed4d4)
+An iOS application created in swift that has information about different famous people.
 
 # How to use
 Its simple! just Install and start using.
