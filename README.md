@@ -9,6 +9,5 @@ An iOS application created in swift that has information about different famous 
 Its simple! just Install and start using.
 
 # Screenshots
-![Screenshot](https://github.com/Sashen943/Famous-People/blob/dev/FamousPeople/images/FamousPeople1.png)
-![Screenshot](https://github.com/Sashen943/Famous-People/blob/dev/FamousPeople/images/FamousPeople2.png)
+<img src="https://github.com/Sashen943/Famous-People/blob/dev/FamousPeople/images/FamousPeople1.png" width="100" height="200" /> <img src="https://github.com/Sashen943/Famous-People/blob/dev/FamousPeople/images/FamousPeople2.png" width="100" height="200" />
 
